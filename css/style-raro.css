@@ -7,6 +7,23 @@
     background-size: cover;
 }
 
+.blue-corner {
+    border-radius: 25px;
+    background: #3A1C84;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    width: auto;
+    height: auto; 
+}
+
+.light-blue-corner{
+    border-radius: 25px;
+    background: #573BFF;
+    width: auto;
+    height: auto; 
+}
+
+
 html {
     font-family: 'Rubik';
     line-height: 1.15;
@@ -80,6 +97,10 @@ p {
     font-size: 40px;
 }
 
+.font-color-water-green{
+    color : #16D5C7;
+}
+
 .text-bold{
     font-weight: bold;
 }
@@ -92,6 +113,9 @@ p {
 .backgroud-color-default {
     background: rgb(87,59,255);
     background: linear-gradient(90deg, rgba(87,59,255,1) 0%, rgba(58,28,132,1) 37%);
+}
+.backgroud-color-footer {
+    background: #3A1C84;
 }
 
 .button-standard-raro{
@@ -118,5 +142,61 @@ p {
    border-radius: 100%;
 }
 
+.footer-padding{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.text-reduce{
+    font-size: medium;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.icon-space {
+    padding-left: 5px;
+    padding-right: 5px;
+}
 
 #mapRome { height: 500px; }
+
+.input-newsletter {
+	font-size: 18px;
+	padding: 5px 10px;
+	width: 100%;
+	outline: none;
+	background: #3A1C84;
+	color: #FFFFFF;
+	border: 3px solid #FFFFFF;
+	border-radius: 8px;
+	transition: .3s ease;
+}
+
+.input-newsletter:focus {
+	background: #3A1C84;
+	border: 3px solid #FFFFFF;
+	border-radius: 10px;
+}
+
+.input-newsletter::placeholder {
+	color: #DDDDDD;
+}
+
+.btn-newsletter {
+    -webkit-border-radius: 50;
+    -moz-border-radius: 50;
+    border-radius: 50px;
+    color: #4a2dc5;
+    font-size: 20px;
+    background: #ffffff;
+    padding: 10px 40px 10px 40px;
+    border: solid #1f628d 1px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-newsletter:hover {
+    text-decoration: none;
+}
