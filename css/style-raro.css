@@ -7,20 +7,28 @@
     background-size: cover;
 }
 
+.div-image-colosseum {
+    background-image: url("images-css/img_test.svg"); /* The image used */
+    background-color: transparent; /* Used if the image is unavailable */
+    height: 600px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: contain;
+    max-width: 80%;
+}
+
 .blue-corner {
     border-radius: 25px;
     background: #3A1C84;
     padding-bottom: 50px;
     padding-top: 50px;
-    width: auto;
-    height: auto; 
 }
 
 .light-blue-corner{
     border-radius: 25px;
     background: #573BFF;
-    width: auto;
-    height: auto; 
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 
@@ -101,6 +109,10 @@ p {
     color : #16D5C7;
 }
 
+.font-color-black{
+    color: black;
+}
+
 .text-bold{
     font-weight: bold;
 }
@@ -117,6 +129,7 @@ p {
 .backgroud-color-footer {
     background: #3A1C84;
 }
+
 
 .button-standard-raro{
     background-color: transparent;
@@ -185,16 +198,19 @@ p {
 }
 
 .btn-newsletter {
-    -webkit-border-radius: 50;
-    -moz-border-radius: 50;
-    border-radius: 50px;
+    font-weight: 0;
+    font-size: 14px;
     color: #4a2dc5;
-    font-size: 20px;
-    background: #ffffff;
-    padding: 10px 40px 10px 40px;
-    border: solid #1f628d 1px;
-    text-decoration: none;
-    font-weight: bold;
+    background-color: #ffffff;
+    padding: 4px 55px;
+    border: solid #4a2dc5 2px;
+    box-shadow: none;
+    border-radius: 50px;
+    transition : 0ms;
+    transform: translateY(0);
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
 }
 
 .btn-newsletter:hover {
