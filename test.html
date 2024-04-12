@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cambia Lingua</title>
+</head>
+<body>
+  <h1 id="titolo">Il mio sito web</h1>
+  
+  <p id="testo">Benvenuto! Questo è un esempio di pagina web.</p>
+  
+  <button onclick="cambiaLingua('it')">Italiano</button>
+  <button onclick="cambiaLingua('en')">Inglese</button>
+  
+  <script>
+    // Funzione per impostare la lingua in base ai cookie o allo storage locale
+    function impostaLinguaPredefinita() {
+      var linguaPredefinita = localStorage.getItem('linguaPredefinita');
+      if (linguaPredefinita) {
+        cambiaLingua(linguaPredefinita);
+      }
+    }
+    
+    // Richiama la funzione per impostare la lingua predefinita all'avvio della pagina
+    impostaLinguaPredefinita();
+    
+    // Funzione per cambiare la lingua
+    function cambiaLingua(lingua) {
+      document.documentElement.lang = lingua; // Imposta la lingua della pagina
+      localStorage.setItem('linguaPredefinita', lingua); // Salva la preferenza della lingua nello storage locale
+      
+      // Seleziona gli elementi che devono essere tradotti
+      var titolo = document.getElementById('titolo');
+      var testo = document.getElementById('testo');
+      
+      // Traduci gli elementi in base alla lingua selezionata
+      if (lingua === 'it') {
+        titolo.textContent = 'Il mio sito web';
+        testo.textContent = 'Benvenuto! Questo è un esempio di pagina web.';
+      } else if (lingua === 'en') {
+        titolo.textContent = 'My website';
+        testo.textContent = 'Welcome! This is an example webpage.';
+      }
+    }
+  </script>
+</body>
+</html>

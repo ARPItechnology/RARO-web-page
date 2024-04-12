@@ -17,6 +17,17 @@
     max-width: 80%;
 }
 
+.div-curve-effect{
+    background-image: url("images-css/vector_curve.svg"); /* The image used */
+    background-color: transparent; /* Used if the image is unavailable */
+    height: 1000px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+
+
+
 .blue-corner {
     border-radius: 25px;
     background: #3A1C84;
@@ -57,6 +68,11 @@ nav {
     padding: 0.5rem 1rem;
 }
 
+.nav{
+    --bs-nav-link-color: white; 
+    --bs-nav-link-hover-color: white; 
+}
+
 ul{
     list-style-type: none;
     padding: 0;
@@ -79,6 +95,18 @@ a.fontChange:hover {
     color: white;
     font-family: 'Dosis';
     font-weight: lighter;
+}
+
+.fontChange{
+    color: white;
+    font-family: 'Dosis';
+    font-weight: lighter;
+}
+
+.btn {
+    font-size: 1.5rem;
+    border: solid #ffffff 2px;
+    border-radius: 50px;
 }
 
 .layout-content {
@@ -164,7 +192,7 @@ p {
     font-size: medium;
 }
 
-.text-center{
+.center-content{
     text-align: center;
 }
 
@@ -215,4 +243,19 @@ p {
 
 .btn-newsletter:hover {
     text-decoration: none;
+}
+
+.col-md-4-right{
+    float: right;
+}
+
+.img-resize-test {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media (max-width: 575px) {
+    .img-resize-app-example{
+        height: 300px;
+    }
 }
