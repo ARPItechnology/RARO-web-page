@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
@@ -45,4 +45,36 @@
     }
   </script>
 </body>
+</html>-->
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SVG in un div</title>
+<style>
+  .container {
+    overflow: hidden; /* Impedisce all'immagine di fuoriuscire dal div */
+    width: 300px; /* Larghezza del div */
+    height: 300px; /* Altezza del div */
+    border: 1px solid #000; /* Bordo per il div */
+  }
+
+  .svg-image {
+    width: 100%; /* Fai in modo che l'immagine si adatti alla larghezza del div */
+    height: auto; /* Imposta l'altezza automaticamente per mantenere le proporzioni originali */
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Inserisci l'immagine SVG qui -->
+  <svg class="svg-image" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="50" cy="50" r="40" fill="red" />
+  </svg>
+</div>
+
+</body>
 </html>
+

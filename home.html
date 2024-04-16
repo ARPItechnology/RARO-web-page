@@ -12,7 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>RARO</title>
+  <title>RARO - Home</title>
 
   <!-- fonts style -->
   <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet'>
@@ -25,46 +25,42 @@
 
   <!-- Custom styles for this template -->
   <link rel="stylesheet" href="css/bootstrap.min.css"/>
-  <script defer src="js/bootstrap.min.js"></script>
   <script defer src="js/bootstrap.bundle.min.js"></script>
+
   <link href="css/style-raro.css" type="text/css" rel="stylesheet" />
   <script>
     window.onload = function() {
-      mapboxgl.accessToken = 'pk.eyJ1IjoiYm9mZi10YXAiLCJhIjoiY2x1c2VqOWZsMG1qMjJqcGt2OTRhM2YzdSJ9.wyVbY8ZnetVwDsLbkLeEFw';
-      const map = new mapboxgl.Map({
-          container: 'mapRome', // container ID
-          center: [12.491367, 41.889991], // starting position [lng, lat]
-          zoom: 13 // starting zoom
-      });
-      window.location.href = '#section0';
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYm9mZi10YXAiLCJhIjoiY2x1c2VqOWZsMG1qMjJqcGt2OTRhM2YzdSJ9.wyVbY8ZnetVwDsLbkLeEFw';
+    const map = new mapboxgl.Map({
+        container: 'mapRome', // container ID
+        center: [12.491367, 41.889991], // starting position [lng, lat]
+        zoom: 13 // starting zoom
+    });
     }
-  </script>
+</script>
 </head>
 
 <body>
   <div class="div-header">
     <h4>
-      <div class="row">
-
-      </div>
       <nav>
         <ul>
           <li>
             <a href="#">
-              <img src="images/orizzontale_NoPayoff_1.png" alt="">
+              <img src="images/logo-navbar-raro.svg" alt="">
             </a>
           </li>
-          <li><a class="fontChange" href="#" >Home</a></li>
-          <li><a class="fontChange" href="#" >Tours</a></li>
+          <li><a class="fontChange" href="home.html" >Home</a></li>
+          <li><a class="fontChange" href="tours.html" >Tours</a></li>
           <li><a class="fontChange" href="#" >Agenzie</a></li>
           <li>
               <button class="btn dropdown-toggle fontChange" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Scegli la lingua
               </button>
               <ul class="dropdown-menu" style="background-color: #3A1C84">
-                <li><a class="dropdown-item fontChange" href="#">Italiano</a></li>
-                <li><a class="dropdown-item fontChange" href="#">Inglese</a></li>
-                <li><a class="dropdown-item fontChange" href="#">Spagnolo</a></li>
+                <li><a class="dropdown-item dropdown-item-change-lang fontChange" href="#">Italiano</a></li>
+                <li><a class="dropdown-item dropdown-item-change-lang fontChange" href="#">Inglese</a></li>
+                <li><a class="dropdown-item dropdown-item-change-lang fontChange" href="#">Spagnolo</a></li>
               </ul>
           </li>
         </ul>
@@ -78,7 +74,7 @@
         </div>
         <div class="row">
           <div class="col-md-8">
-            <img class="img-resize" src="images/orizzontale_NoPayoff_3.png">
+            <img class="img-resize" src="images/logo-raro.svg">
           </div>
         </div>
       </div>
@@ -93,14 +89,14 @@
             <p>Utilizzando la tecnologia AR, la tua startup potrebbe creare guide turistiche personalizzate che si adattano agli interessi e alle preferenze dei visitatori.</p>
             <p><button class="button-standard-raro">Learn more</button></p>
           </div>
-          <div class="col-md-6"><img class="img-resize" src="images/mask-group-2.png"></div>
+          <div class="col-md-6"><img class="img-resize" src="images/mask-group-1.svg"></div>
         </div>
       </div>
     </section>
     <section class="layout-content">
       <div class="container">
         <div class="row">
-          <div class="col-md-6"><img class="img-resize" src="images/mask-group-1.png"></div>
+          <div class="col-md-6"><img class="img-resize" src="images/mask-group-2.svg"></div>
           <div class="col-md-6">
             <p>Utilizzando la tecnologia AR, la tua startup potrebbe creare guide turistiche personalizzate che si adattano agli interessi e alle preferenze dei visitatori.</p>
             <p><button class="button-standard-raro">Learn more</button></p>
@@ -171,7 +167,7 @@
                   <p>"Progettato per adattarsi perfettamente alla forma del tuo viso, offre comfort ottimale per sessioni di realtà virtuale prolungate. La fascia regolabile e leggera assicura una distribuzione del peso uniforme, riducendo al minimo l'affaticamento. Goditi un'immersione totale nel mondo virtuale senza distrazioni, grazie alla nostra soluzione ergonomica di qualità superiore."</p>
                 </div>
                 <div class="col-md-8">
-                  <img class="img-resize" src="images/61HBRnEtAAS_1.png">
+                  <img class="img-resize" src="images/cardboard-example-raro.svg">
                 </div>
               </div>
             </div>
@@ -181,26 +177,50 @@
     </section>
 
     <section class="layout-content">
-      <div class="container text-center div-image-colosseum text-reduce">
-        <div class="row gy-5">
-          <div class="col-md-4 offset-md-6">Il Colosseo come non l'hai mai visto!</div>
-          <div class="col-md-4 offset-md-8">"Immergiti nella grandiosità del passato con il nostro tour del Colosseo! Lasciati trasportare indietro nel tempo mentre esplori uno dei monumenti più iconici della storia antica. Con la guida esperta dei nostri archeologi, attraverserai le antiche rovine e rivivrà la gloria dell'Impero Romano. Ammira da vicino l'architettura maestosa e ascolta racconti avvincenti di combattimenti tra gladiatori, giochi e intrighi politici che animavano questo simbolo di Roma.</div>
-          <div class="col-md-4 offset-md-8 center-content"><button class="button-standard-raro">Book now</button></div>
-        </div>
-        <!--<div class="row justify-content-end">
-          <div class="col-md-4 text-center">
-            "Immergiti nella grandiosità del passato con il nostro tour del Colosseo! Lasciati trasportare indietro nel tempo mentre esplori uno dei monumenti più iconici della storia antica. Con la guida esperta dei nostri archeologi, attraverserai le antiche rovine e rivivrà la gloria dell'Impero Romano. Ammira da vicino l'architettura maestosa e ascolta racconti avvincenti di combattimenti tra gladiatori, giochi e intrighi politici che animavano questo simbolo di Roma.
+      <div class="container text-reduce">
+        <div class="row gy-4 layout-content">
+          <div class="col-md-8 center-content"><img class="img-resize" src="images/colosseum-img-generic.svg"> </div>
+          <div class="col-md-4">
+            <div class="row gy-4">
+              <div class="col-md-12" style="font-size: 30px;">Il Colosseo come non l'hai mai visto!</div>
+              <div class="col-md-12">"Immergiti nella grandiosità del passato con il nostro tour del Colosseo! Lasciati trasportare indietro nel tempo mentre esplori uno dei 
+                monumenti più iconici della storia antica. Con la guida esperta dei nostri archeologi, attraverserai le antiche rovine e rivivrà la gloria dell'Impero Romano.
+                 Ammira da vicino l'architettura maestosa e ascolta racconti avvincenti di combattimenti tra gladiatori, giochi e intrighi politici che animavano questo simbolo di 
+                 Roma."</div>
+              <div class="col-md-12"><button class="button-standard-raro">Book now</button></div>
+            </div>
           </div>
         </div>
-        <div class="row justify-content-end">
-          <div class="col-md-4 text-center">
-            <button class="button-standard-raro">Book now</button>
+        <div class="row gy-4 layout-content">
+          <div class="col-md-4">
+            <div class="row gy-4">
+              <div class="col-md-12" style="font-size: 30px;">I Fori Imperiali nel 2024</div>
+              <div class="col-md-12">"Immergiti nella grandiosità del passato con il nostro tour del Colosseo! Lasciati trasportare indietro nel tempo mentre esplori uno dei 
+                monumenti più iconici della storia antica. Con la guida esperta dei nostri archeologi, attraverserai le antiche rovine e rivivrà la gloria dell'Impero Romano.
+                 Ammira da vicino l'architettura maestosa e ascolta racconti avvincenti di combattimenti tra gladiatori, giochi e intrighi politici che animavano questo simbolo di 
+                 Roma."</div>
+              <div class="col-md-12"><button class="button-standard-raro">Book now</button></div>
+            </div>
           </div>
-        </div>-->
+          <div class="col-md-8 center-content"><img class="img-resize" src="images/imperial-fora-generic.svg"> </div>
+        </div>
+        <div class="row gy-4 layout-content">
+          <div class="col-md-8 center-content"><img class="img-resize" src="images/arch-of-constantine-generic.svg"> </div>
+          <div class="col-md-4">
+            <div class="row gy-4">
+              <div class="col-md-12" style="font-size: 30px;">L'arco di Costantino</div>
+              <div class="col-md-12">"Immergiti nella grandiosità del passato con il nostro tour del Colosseo! Lasciati trasportare indietro nel tempo mentre esplori uno dei 
+                monumenti più iconici della storia antica. Con la guida esperta dei nostri archeologi, attraverserai le antiche rovine e rivivrà la gloria dell'Impero Romano.
+                 Ammira da vicino l'architettura maestosa e ascolta racconti avvincenti di combattimenti tra gladiatori, giochi e intrighi politici che animavano questo simbolo di 
+                 Roma."</div>
+              <div class="col-md-12"><button class="button-standard-raro">Book now</button></div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="layout-content">
-      <div class="container text-center ext-reduce">
+      <div class="container text-center text-reduce">
         <div class="row">
           <div class="col">
             Immergiti nella grandiosità del passato con il nostro tour del Colosseo! Lasciati trasportare indietro nel tempo mentre esplori uno dei monumenti più iconici della storia antica. 
@@ -208,7 +228,7 @@
         </div>
       </div>
     </section>
-    <hr style="width:30%;color:white;height:4px;margin:auto;border-width:10;">
+    <hr style="width:30%;color:white;height:4px;margin:auto;">
     <section class="layout-content div-curve-effect">
       <div class="container-fluid">
         <div class="row">
@@ -229,7 +249,7 @@
               <img class="img-resize" src="images/avatar_review_1.svg">
             </div>
             <div class="col-12 font-color-black">
-              <p>Paolo P</p>
+              <p class="text-bold">Paolo P</p>
               <p>"Sono rimasto estremamente soddisfatto dell'esperienza con AR Tourism! L'app è semplice da usare e ha trasformato completamente il mio modo di viaggiare. Grazie alla realtà aumentata, ho potuto esplorare luoghi storici e monumenti con dettagli incredibili che non avrei mai potuto immaginare altrimenti.</p>
               <hr>
             </div>
@@ -241,7 +261,7 @@
               <img class="img-resize" src="images/avatar_review_2.svg">
             </div>
             <div class="col-12 font-color-black">
-              <p>Marta M</p>
+              <p class="text-bold">Marta M</p>
               <p>"Sono rimasto estremamente soddisfatto dell'esperienza con AR Tourism! L'app è semplice da usare e ha trasformato completamente il mio modo di viaggiare. Grazie alla realtà aumentata, ho potuto esplorare luoghi storici e monumenti con dettagli incredibili che non avrei mai potuto immaginare altrimenti.</p>
               <hr>
             </div>
@@ -253,7 +273,7 @@
               <img class="img-resize" src="images/avatar_review_3.svg">
             </div>
             <div class="col-12 font-color-black">
-              <p>Giorgio R</p>
+              <p class="text-bold">Giorgio R</p>
               <p>"Sono rimasto estremamente soddisfatto dell'esperienza con AR Tourism! L'app è semplice da usare e ha trasformato completamente il mio modo di viaggiare. Grazie alla realtà aumentata, ho potuto esplorare luoghi storici e monumenti con dettagli incredibili che non avrei mai potuto immaginare altrimenti.</p>
               <hr>
             </div>
@@ -263,7 +283,7 @@
     </div>
     <div class="layout-content">
       <div class="container">
-        <div class="row">
+        <div class="row gy-4">
           <div class="col-md-8">
             <div class="blue-corner">
               <div class="container">
@@ -305,7 +325,7 @@
       <div class="container">
         <div class="row footer-padding text-reduce">
           <div class="col-md-4">
-            <p><img src="images/orizzontale_NoPayoff_2.png"><span> Contatti</span></p>
+            <p><img src="images/icon-logo-raro.svg"><span> Contatti</span></p>
             <p>+39 38920838482</p>
             <p>02 9837462</p>
             <p>raro@info.com</p>

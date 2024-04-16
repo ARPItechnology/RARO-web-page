@@ -1,20 +1,10 @@
 .div-header{
-    background-image: url("images-css/pexels-alexis-caso-3094799_1.jpg"); /* The image used */
+    background-image: url("images-css/initial-background.svg"); /* The image used */
     background-color: #cccccc; /* Used if the image is unavailable */
-    height: 1000px; /* You must set a specified height */
+    height: 800px; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
-}
-
-.div-image-colosseum {
-    background-image: url("images-css/img_test.svg"); /* The image used */
-    background-color: transparent; /* Used if the image is unavailable */
-    height: 600px;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: contain;
-    max-width: 80%;
 }
 
 .div-curve-effect{
@@ -26,7 +16,14 @@
     background-size: cover;
 }
 
-
+.div-header-tour{
+    background-image: url("images-css/imperial-fora-generic.svg");
+    border-radius: 50px;
+    height: 600px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
 
 .blue-corner {
     border-radius: 25px;
@@ -44,13 +41,13 @@
 
 
 html {
-    font-family: 'Rubik';
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body{
+    font-family: 'Rubik';
     margin: 0;
     font-size: 1.5rem;
     font-weight: 400;
@@ -258,4 +255,14 @@ p {
     .img-resize-app-example{
         height: 300px;
     }
+}
+
+.dropdown-item-change-lang:hover{
+    color: white;
+    font-weight: bold;
+    background-color: #3A1C84;
+}
+
+.title-generic{
+    padding-bottom: 20px;
 }
