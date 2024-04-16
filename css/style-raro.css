@@ -25,6 +25,15 @@
     background-size: cover;
 }
 
+.div-book-colosseum{
+    background-image: url("images-css/colosseum-img-generic-tour.svg");
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 600px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+
 .blue-corner {
     border-radius: 25px;
     background: #3A1C84;
@@ -265,4 +274,11 @@ p {
 
 .title-generic{
     padding-bottom: 20px;
+}
+
+.button-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
 }
