@@ -17,12 +17,7 @@
 }
 
 .div-header-tour{
-    background-image: url("images-css/imperial-fora-generic.svg");
-    border-radius: 50px;
-    height: 600px;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
+    width: 800px;
 }
 
 .div-book-colosseum{
@@ -173,6 +168,24 @@ p {
     color: #fff;
     padding: 10px 90px;
     border: solid #ffffff 2px;
+    box-shadow: none;
+    border-radius: 50px;
+    transition : 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button-itinerary-raro{
+
+    font-weight: 0;
+    font-size: 14px;
+    color: #fff;
+    background-color: #3a1c84;
+    padding: 10px 70px;
+    border: none;
     box-shadow: none;
     border-radius: 50px;
     transition : 1000ms;
