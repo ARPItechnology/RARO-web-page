@@ -153,7 +153,7 @@ p {
 
 .backgroud-color-default {
     background: rgb(87,59,255);
-    background: linear-gradient(90deg, rgba(87,59,255,1) 0%, rgba(58,28,132,1) 37%);
+    background: linear-gradient(90deg, rgba(87,59,255,1) 0%, rgba(58,28,132,1) 100%);
 }
 .backgroud-color-footer {
     background: #3A1C84;
@@ -162,6 +162,24 @@ p {
 
 .button-standard-raro{
     background-color: transparent;
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    padding: 10px 90px;
+    border: solid #ffffff 2px;
+    box-shadow: none;
+    border-radius: 50px;
+    transition : 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button-standard-raro-semi-transparent{
+    background-color: rgb(87,59,255,0.5);
     font-family: 'Rubik';
     font-weight: 500;
     font-size: 14px;
